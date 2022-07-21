@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    background-color: rgb(47, 79, 79);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.title{
+    text-align: center;
+    font-family: 'Water Brush', cursive;
+    font-size: 45px;
+}
+.notescontainer{
+    display: grid;
+    grid-template-columns: repeat(6 ,280px);
+    gap: 20px;
+}
+.addnotes{
+    width: 280px;
+    height: 250px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+#plusbtn{
+    font-size: 55px;
+    position: relative;
+    top: 30%;
+}
+.addtext{
+    font-size: 20px;
+    position: relative;
+    top: 30%;
+}
+.notes{
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+.notetitle{
+    position: relative;
+    top: -7%;
+}
+.notep{
+    position: relative;
+    top: -9%;
+}
+hr{
+    position: relative;
+    top: 9%;
+}
+.notetime{
+    display: grid;
+    justify-content: center;
+    font-size: 15px;    
+}
+.editnote , .deletenote{
+    position: relative;
+    left: 80px;
+    top: -4px;
+    font-size: 18px;
+    border: 2px solid;
+    border-radius: 10px;
+    color:#9ED0E6;
+    cursor: pointer;
+}
+.editnote:hover , .deletenote:hover{
+    background-color: #00b7ff;
+    color: rgb(47, 79, 79);
+}
+@media only screen and (max-width: 980px){
+    .notescontainer{
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    gap: 20px;
+    }
+  }
+
+.popupscreen{
+    height: 750px;
+    width: 750px;
+    border: 4px solid;
+    border-color: black;
+    background-color:rgb(47, 79, 79) ;
+    z-index: 999;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    top: -250px; 
+    display: none;
+
+}
+@media only screen and (max-width: 992px){
+    .popupscreen{
+        height: 750px;
+        width: 750px;
+        border: 4px solid;
+        border-color: black;
+        background-color:rgb(47, 79, 79) ;
+        z-index: 999;
+        text-align: center;
+        position: relative;
+        left: 10%;
+        top: -250px; 
+    
+    }
+  }
+#closebtn{
+    font-size: 50px;
+    display: grid;
+    justify-content: right;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+#closebtn:hover{
+    color: black;
+}
+
+.popuptitle , .description{
+    font-size: 30px;
+    display: grid;
+    justify-content: left;
+    color: #000000;
+    padding-left:6px;
+    margin-bottom: 8px;
+}
+
+.titleinput{
+    height: 50px;
+    font-size: 25px;
+    display: grid;
+    justify-content: left;
+    background-color: white;
+    color: black;
+}
+
+.descriptioninput{
+    height: 75px;
+    font-size: 20px;
+    display: grid;
+    justify-content: left;
+    background-color: white;
+    color: black;
+}
+.rjnotes{
+    font-size: 120px;
+    font-family: 'Water Brush', cursive;
+}
+.addnotepopup{
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    color:#000000;
+    cursor: pointer;
+}
+.addnotepopup:hover{
+    background-color: #00b7ff;
+    color: rgb(47, 79, 79);
+}
+#notess{
+    display: none;
+}
